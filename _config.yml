@@ -1,7 +1,7 @@
 # Site
 title:              'Coming Soon' 
 bio:                ''
-description:        ""
+#description:        ""
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/HOPPS-LOGO.jpg'
