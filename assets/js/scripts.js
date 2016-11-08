@@ -24,10 +24,18 @@ $(document).ready(function() {
     if ($(".wrapper").hasClass('fadeOut')) {
         $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
     }
-    $(".zoombtn").click(function() {
+   $(".zoombtn").click(function() {
+      if ($(".container").hasClass('fadeIn')) {
+        console.log("fade out")
         $(".container").removeClass("fadeIn").addClass("fadeOut");
         $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
-    });
+      }
+      else if ($(".container").hasClass('fadeOut')) {
+        console.log("fade in")
+        $(".container").removeClass("fadeOut").addClass("fadeIn");
+        $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
+      }
+      });
     // go up button
     $.goup({
         trigger: 500,
